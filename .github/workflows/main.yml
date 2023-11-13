@@ -41,6 +41,7 @@ jobs:					# A workflow run is made up of one or more jobs,
       run: echo “hello world workflows …”
       
     - name: run model 
-      run: python linear-model.py# It Runs command-line programs using the 
+      run: python linear-model.py
+      # It Runs command-line programs using the 
   # operating system's shell.
 
