@@ -10,20 +10,20 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    container: adsoft/aiops:latest
+#    container: adsoft/aiops:latest
 
     steps:
     - uses: actions/checkout@v2
     - name: hello-world
       run: echo "hello world workflows …"
     - name: install unzip 
-      run: apt-get install unzip
+      run: sudo apt-get install unzip
     - name: Download model
-      run: wget -O catdog-model.zip https://firebasestorage.googleapis.com/v0/b/catdog-7c834.appspot.com/o/catdog-model.zip?alt=media&token=3b20bace-d4bc-4e52-abda-a9f2418c58e8
+      run: wget -O cat-dog.zip https://firebasestorage.googleapis.com/v0/b/catdog-7c834.appspot.com/o/catdog-model.zip?alt=media&token=3b20bace-d4bc-4e52-abda-a9f2418c58e8
     - name: extract model
-      run: unzip catdog-model.zip
+      run: unzip cat-dog.zip
     - name: show dir
-      run: ls -la catdog-model.zip
+      run: ls -la cat-dog
 
     - name: docker login
       env:
