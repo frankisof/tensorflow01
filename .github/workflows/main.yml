@@ -23,7 +23,7 @@ jobs:
     - name: extract model
       run: unzip catdog-model.zip
     - name: show dir
-      run: ls -la cat-dog
+      run: ls -la catdog-model.zip
 
     - name: docker login
       env:
