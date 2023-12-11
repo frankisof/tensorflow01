@@ -24,7 +24,7 @@ jobs:
     - name: extract model
       run: unzip modelo_entrenado.zip
     - name: show dir
-      run: ls -la modelo_entrenado
+      run: ls -la modelo_entrenado_saved_model
 
     - name: docker login
       env:
