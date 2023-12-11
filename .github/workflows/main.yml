@@ -19,7 +19,7 @@ jobs:
     - name: install unzip 
       run: sudo apt-get install unzip
     - name: Download model
-      run: wget -O modelo_entrenado_saved_model.zip https://firebasestorage.googleapis.com/v0/b/persona-d8f82.appspot.com/o/modelo_entrenado_saved_model.zip?alt=media&token=7f6b83f4-036e-4905-aee5-86363828e5fb
+      run: wget -O modelo_entrenado_saved_model.zip https://firebasestorage.googleapis.com/v0/b/persona-d8f82.appspot.com/o/modelo_entrenado_saved_model.zip?alt=media&token=6c6d1b2d-c3d6-4236-bc86-5abd1f200091
     - name: extract model
       run: unzip modelo_entrenado_saved_model.zip
     - name: show dir
