@@ -19,12 +19,12 @@ jobs:
     - name: install unzip 
       run: sudo apt-get install unzip
     - name: Download model
-      run: wget -O modeloexp.zip "https://firebasestorage.googleapis.com/v0/b/persona-d8f82.appspot.com/o/modeloexp.zip?alt=media&token=b437060f-318b-4f74-9a90-82800bdeb600"
+      run: wget -O modelo-cgp.zip "https://firebasestorage.googleapis.com/v0/b/persona-d8f82.appspot.com/o/modelo-cgp.zip?alt=media&token=9592e1b9-7110-4f8b-9a98-771eb3f969e4"
 
     - name: extract model
-      run: unzip modeloexp.zip
+      run: unzip modelo-cgp.zip
     - name: show dir
-      run: ls -la modeloexp
+      run: ls -la modelo-cgp
 
     - name: docker login
       env:
